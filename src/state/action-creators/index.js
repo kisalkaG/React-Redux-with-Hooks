@@ -15,3 +15,12 @@ export const withdrawMoney = (amount) => {
         })
     }
 }
+
+export const transferMoney = (amount) => {
+    return (dispatch) => {
+        dispatch ({
+            type: "transfer",
+            payload: amount
+        })
+    }
+}
